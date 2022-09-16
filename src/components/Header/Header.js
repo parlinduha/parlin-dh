@@ -13,11 +13,9 @@ const Header = ({ props }) => {
 
   return (
     <Navbar expand="lg" sticky="top" className="header ">
-      <Nav.Link as={NavLink} to="/" className="header_navlink">
         <Navbar.Brand className="header_home">
           <HomeRoundedIcon />
         </Navbar.Brand>
-      </Nav.Link>
 
       <Navbar.Toggle />
       <Navbar.Collapse>

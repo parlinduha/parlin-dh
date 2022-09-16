@@ -10,7 +10,7 @@ import AspectRatioOutlinedIcon from "@mui/icons-material/AspectRatio";
 
 export default {
   name: "Parlin Dh",
-  title: "Fullstack Developer",
+  title: "Backend Developer",
 
   birthday: "04th June 1996",
   address: "DKI Jakarta",
