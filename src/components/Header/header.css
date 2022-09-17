@@ -41,6 +41,7 @@
 .header .header_right {
   display: flex !important;
   align-items: center !important;
+  margin: 2px !important;
 }
 
 .header .header_right > a > .MuiSvgIcon-root {
@@ -59,6 +60,7 @@
   min-width: 100px !important;
   outline: none !important;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 .resume-btn .btn_text {
   color: black !important;

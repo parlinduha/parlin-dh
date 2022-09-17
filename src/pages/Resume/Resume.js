@@ -56,7 +56,10 @@ const Resume = () => {
                         variant="body2"
                         className="timeline_description"
                       >
-                        {experience.description}
+                        <li>{experience.description.point1}</li>
+                        <li>{experience.description.point2}</li>
+                        <li>{experience.description.point3}</li>
+                        <li>{experience.description.point4}</li>
                       </Typography>
                     </TimelineContent>
                   </TimelineItem>

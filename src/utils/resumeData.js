@@ -49,8 +49,15 @@ export default {
     {
       title: "Market Intelligence Analyst",
       date: "2021-Present",
-      description:
-        "Meneliti dan menyelesaikan masalah terkait integritas aliran data ke dalam basis data",
+      description:[
+        {
+          point1:
+          "Meneliti dan menyelesaikan masalah terkait integritas aliran data ke dalam basis data",
+          point2: "Mengidentifikasi dan mendokumentasikan aturan bisnis terperinci dan kasus penggunaan berdasarkan analisis persyaratan",
+          point3: "Riset tentang skema promo & insentif pesaing mitra",
+          point4: "Alur kerja bisnis yang terdokumentasi untuk tinjauan pemangku kepentingan"
+        }
+      ]
     },
     {
       title: "Account Officer",
