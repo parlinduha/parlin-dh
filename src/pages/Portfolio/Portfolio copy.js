@@ -102,12 +102,10 @@ const Portfolio = () => {
         </Grid>
       </Grid>
       <Dialog
-        open={Boolean(projectDialog)}
         onClose={() => setProjectDialog(false)}
         className="projectDialog"
         maxWidth={'lg'} 
       >
-      <img src={projectDialog.images} alt="" className="projectDialog_image" /> 
       </Dialog>
       {/* End Value Tabs */}
     </Grid>

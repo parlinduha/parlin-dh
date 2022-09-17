@@ -8,9 +8,7 @@ import resumeData from "../../utils/resumeData";
 import TouchAppOutlinedIcon from "@mui/icons-material/TouchAppOutlined";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
-import CustomeButton from "../Button/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
-import { Link } from "react-router-dom";
 
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
@@ -45,7 +43,7 @@ const Profile = () => {
       </figure>
 
       <div className="profile-information">
-        <CustomTimeline icon={<TouchAppOutlinedIcon />}>
+        <CustomTimeline icon={<TouchAppOutlinedIcon fontSize="large"/>}>
           <CustomTimelineItem title="Email" text={resumeData.email}  />
 
           {Object.keys(resumeData.socials).map((key) => (

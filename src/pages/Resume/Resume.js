@@ -11,6 +11,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import SchoolIcon from "@mui/icons-material/School";
 import TimelineDot from "@mui/lab/TimelineDot";
 import CustomeButton from "../../components/Button/Button";
+import { Group } from "@mui/icons-material";
 
 const Resume = () => {
   return (
@@ -49,6 +50,9 @@ const Resume = () => {
                       <Typography className="timeline_title">
                         {experience.title}
                       </Typography>
+                      <Typography className="timeline_company">
+                        {experience.company}
+                      </Typography>
                       <Typography variant="caption" className="timeline_date">
                         {experience.date}
                       </Typography>
@@ -56,10 +60,7 @@ const Resume = () => {
                         variant="body2"
                         className="timeline_description"
                       >
-                        <li>{experience.description.point1}</li>
-                        <li>{experience.description.point2}</li>
-                        <li>{experience.description.point3}</li>
-                        <li>{experience.description.point4}</li>
+                        {experience.description}
                       </Typography>
                     </TimelineContent>
                   </TimelineItem>
@@ -73,8 +74,11 @@ const Resume = () => {
                     <CustomTimelineSeparator />
                     <TimelineContent className="timeline_content">
                       <Typography className="timeline_title">
-                        {education.title}
+                        {education.univ}
                       </Typography>
+                      <Typography className="timeline_company">
+                      {education.title}
+                    </Typography>
                       <Typography variant="caption" className="timeline_date">
                         {education.date}
                       </Typography>
@@ -88,6 +92,30 @@ const Resume = () => {
                   </TimelineItem>
                 ))}
               </CustomeTimeline>
+              <CustomeTimeline title="Organizational Experience" icon={<Group />}>
+              {resumeData.organizations.map((organization) => (
+                <TimelineItem>
+                  <CustomTimelineSeparator />
+                  <TimelineContent className="timeline_content">
+                    <Typography className="timeline_title">
+                      {organization.univ}
+                    </Typography>
+                    <Typography className="timeline_company">
+                    {organization.title}
+                  </Typography>
+                    <Typography variant="caption" className="timeline_date">
+                      {organization.date}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      className="timeline_description"
+                    >
+                      {organization.description}
+                    </Typography>
+                  </TimelineContent>
+                </TimelineItem>
+              ))}
+            </CustomeTimeline>
             </Grid>
           </Grid>
         </Grid>

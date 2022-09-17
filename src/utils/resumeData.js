@@ -47,46 +47,48 @@ export default {
 
   experiences: [
     {
-      title: "Market Intelligence Analyst",
+      title: "Market Intelligence",
+      company: "PT Aplikasi Karya Anak Bangsa (GO-JEK)",
       date: "2021-Present",
-      description:[
-        {
-          point1:
-          "Meneliti dan menyelesaikan masalah terkait integritas aliran data ke dalam basis data",
-          point2: "Mengidentifikasi dan mendokumentasikan aturan bisnis terperinci dan kasus penggunaan berdasarkan analisis persyaratan",
-          point3: "Riset tentang skema promo & insentif pesaing mitra",
-          point4: "Alur kerja bisnis yang terdokumentasi untuk tinjauan pemangku kepentingan"
-        }
-      ]
+      description:
+        
+          "Meneliti dan menyelesaikan masalah terkait integritas aliran data ke dalam basis data. Mengidentifikasi dan mendokumentasikan aturan bisnis terperinci dan kasus penggunaan berdasarkan analisis persyaratan. Riset tentang skema promo & insentif pesaing mitra. Alur kerja bisnis yang terdokumentasi untuk tinjauan pemangku kepentingan"
     },
     {
       title: "Account Officer",
+      company: "PT Bank Permata Tbk",
       date: "2020-2021",
       description:
-        "memberikan dukungan IT di perusahaan menjadi admin penjualan online mendesain produk membuat dan memelihara website perusahaan",
+        "Melakukan verifikasi data nasabah. Membuat rekening baru nasabah",
     },
     {
-      title: "IT Staff",
+      title: "Web Engineer",
+      company: "PT Interatlas Murni",
       date: "2019-2020",
       description:
-        "memberikan dukungan IT di perusahaan menjadi admin penjualan online mendesain produk membuat dan memelihara website perusahaan",
+        "Membuat Desain web sesuai permintaan client. Melakukan maintenance pada web. Melakukan Pengkodingan untuk pembuatan web",
     },
   ],
   educations: [
     {
-      title: "Technical Information",
+      univ: "STMIK WIDURI",
+      title: "Sarjana Teknik Informatika",
       date: "2016-2020",
       description: "Verified",
     },
+  ],
+  organizations: [
     {
-      title: "Senior High Scholl",
-      date: "2011-2013",
-      description: "Verified",
+      univ: "STMIK WIDURI",
+      title: "Ketua BEM Stmik Widuri",
+      date: "Periode 2017-2018",
+      // description: "Verified",
     },
     {
-      title: "Junior High Scholl",
-      date: "2009-2022",
-      description: "Verified",
+      univ: "STMIK WIDURI",
+      title: "Ketua PMK Widuri",
+      date: "Periode 2017-2021",
+      // description: "Verified",
     },
   ],
 
@@ -120,15 +122,15 @@ export default {
   Skills: [
     {
       title: "FRONT-END",
-      description: ["Html", "ReactJs", "Typescript", "Boostrap", "Material UI"],
+      description: ["Html", "ReactJs", "React Native", "Boostrap", "Material UI"],
     },
     {
       title: "BACK-END",
-      description: ["PHP", "JAVA", "NodeJS"],
+      description: ["PHP", "Laravel","Express", "NodeJS"],
     },
     {
       title: "DATABASE",
-      description: ["Firebase", "Ms SQL Server", "MongoDB", "MYSQL"],
+      description: ["Firebase", "MongoDB", "MYSQL"],
     },
     {
       title: "CONTROL SOURCE",
@@ -137,7 +139,32 @@ export default {
   ],
   projects: [
     {
-      tag: "Java",
+      tag: "PHP NATIVE",
+      images: [
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        
+      ],
+      title: "Project Java App",
+      description:
+        "This My Project, This My Project, This My Project, This My Project",
+      caption: "Show Description",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <WebOutlinedIcon />,
+        },
+      ],
+    },
+    {
+      tag: "LARAVEL",
       images: [
         "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
         "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -161,6 +188,87 @@ export default {
           icon: <WebOutlinedIcon />,
         },
       ],
+    },
+    {
+      tag: "REACTJS",
+      images: [
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        
+      ],
+      title: "Project Java App",
+      description:
+        "This My Project, This My Project, This My Project, This My Project",
+      caption: "Show Description",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <WebOutlinedIcon />,
+        },
+      ],
+    },
+    {
+      tag: "REACT NATIVE",
+      images: [
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        
+      ],
+      title: "Project Java App",
+      description:
+        "This My Project, This My Project, This My Project, This My Project",
+      caption: "Show Description",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <WebOutlinedIcon />,
+        },
+        
+      ],
+      
+    },
+    {
+      tag: "REACT NATIVE",
+      images: [
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        
+      ],
+      title: "Project React Native",
+      description:
+        "This My Project, This My Project, This My Project, This My Project",
+      caption: "Show Description",
+      links: [
+        {
+          link: "https://www.youtube.com/",
+          icon: <YouTubeIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <GitHubIcon />,
+        },
+        {
+          link: "https://www.youtube.com/",
+          icon: <WebOutlinedIcon />,
+        },
+        
+      ],
+      
     },
   ],
 };

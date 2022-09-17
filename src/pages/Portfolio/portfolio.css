@@ -9,7 +9,7 @@
   outline-width: 0px !important;
 }
 .customTabs .active {
-  color: var(--main-color) !important;
+  color: #000 !important;
 }
 /* End Tabs */
 
@@ -17,10 +17,9 @@
 .customCard {
   height: 100%;
   max-width: 350px;
-  box-shadow: 0px 0px 48px 0px rgba(4, 6, 4, 0.08) !important;
-  border-radius: 5px;
   overflow: hidden;
-  outline-width: 0px !important;
+  outline-width: 120px !important;
+  box-shadow: 2px 2px 1px 5px rgba(0, 0, 0, 1);
 }
 
 .customCard .customCard_image {

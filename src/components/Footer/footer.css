@@ -8,6 +8,7 @@
     min-height: 70px;
     border-radius: 8px;
     padding: 20px 25px;
+    box-shadow: -5px -5px 1px -2px var(--main-color);
 }
 
 .footer .footer_copyright{

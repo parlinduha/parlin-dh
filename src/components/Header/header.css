@@ -12,11 +12,12 @@
 
 .header .header_link {
   font-weight: 500 !important;
-  color: darkslategrey !important;
+  color: var(--main-color) !important;
 }
 
 .header .header_link:hover {
   color: var(--main-color) !important;
+  border-radius: 40px;
 }
 
 .header .header_link_active {
@@ -40,7 +41,7 @@
 
 .header .header_right {
   display: flex !important;
-  align-items: center !important;
+  align-items:center !important;
   margin: 2px !important;
 }
 
