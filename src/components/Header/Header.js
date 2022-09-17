@@ -46,7 +46,7 @@ const Header = ({ props }) => {
               {resumeData.socials[key].icon}
             </a>
           ))}
-          <CustomeButton text={"Hire Me"} icon={<TelegramIcon />} />
+          <a href={resumeData.emailLink} target="blank" className="resume-btn"><span className="btn_text">Hire Me</span><TelegramIcon /></a>
         </div>
       </Navbar.Collapse>
     </Navbar>

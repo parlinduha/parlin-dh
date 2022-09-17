@@ -10,6 +10,7 @@ import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineContent from "@mui/lab/TimelineContent";
 import CustomeButton from "../Button/Button";
 import GetAppIcon from "@mui/icons-material/GetApp";
+import { Link } from "react-router-dom";
 
 const CustomTimelineItem = ({ title, text, link }) => (
   <TimelineItem>
@@ -45,9 +46,7 @@ const Profile = () => {
 
       <div className="profile-information">
         <CustomTimeline icon={<TouchAppOutlinedIcon />}>
-          <CustomTimelineItem title="Name" text={resumeData.name} />
-          <CustomTimelineItem title="Title" text={resumeData.title} />
-          <CustomTimelineItem title="Email" text={resumeData.email} />
+          <CustomTimelineItem title="Email" text={resumeData.email}  />
 
           {Object.keys(resumeData.socials).map((key) => (
             <CustomTimelineItem
@@ -58,8 +57,8 @@ const Profile = () => {
           ))}
         </CustomTimeline>
         <div className="button_container">
-          <CustomeButton text={"Download CV"} icon={<GetAppIcon />} />
-        </div>
+          <a href={resumeData.resume} className="resume-btn"><span className="btn_text">Download CV</span><GetAppIcon /></a>
+          </div>
       </div>
     </div>
   );

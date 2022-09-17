@@ -16,10 +16,12 @@ export default {
   address: "DKI Jakarta",
   phone: "0853-1236-4895",
   email: "dhparlin@gmail.com",
+  emailLink: "mailto:dhparlin@gmail.com",
+  resume: "https://drive.google.com/file/d/14LgpjWi7gjAtMYeVxsGcvRcfrhd4AWvm/view?usp=sharing",
 
   socials: {
     Github: {
-      link: "https://github.com/ParlinDh",
+      link: "https://github.com/parlinduha",
       text: "Parlin Dh",
       icon: <GitHubIcon />,
     },
@@ -41,14 +43,14 @@ export default {
   },
 
   about:
-    "Started earnest brother believe an exposed so. Me he believing daughters if forfeited at furniture. Age again and stuff downs spoke. Late hour new nay able fat each sell. Nor themselves age introduced frequently use unsatiable devonshire get. They why quit gay cold rose deal park. One same they four did ask busy. Reserved opinions fat him nay position. Breakfast as zealously incommode do agreeable furniture. One too nay led fanny allow plate. \n\nQuick six blind smart out burst. Perfectly on furniture dejection determine my depending an to. Add short water court fat. Her bachelor honoured perceive securing but desirous ham required. Questions deficient acuteness to engrossed as. Entirely led ten humoured greatest and yourself. Besides ye country on observe. She continue appetite endeavor she judgment interest the met. For she surrounded motionless fat resolution may.",
+  "Lulusan pada tahun 2020 di STMIK Widuri jakarta jurusan Teknik Informatika. Saya memiliki keterampilan manajemen waktu yang baik, dan mampu bekerja dengan tim dengan terampil. Kemampuan saya untuk berbaur dan mempelajari hal-hal baru membuat saya ingin terus mengeksplorasi kemampuan dalam setiap pekerjaan yang saya tekuni ",
 
   experiences: [
     {
       title: "Market Intelligence Analyst",
       date: "2021-Present",
       description:
-        "memberikan dukungan IT di perusahaan menjadi admin penjualan online mendesain produk membuat dan memelihara website perusahaan",
+        "Meneliti dan menyelesaikan masalah terkait integritas aliran data ke dalam basis data",
     },
     {
       title: "Account Officer",

@@ -3,7 +3,7 @@
   background-color: white !important;
   padding: 0px 22px 0 0 !important;
   border-radius: 10px !important;
-  box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.07) !important;
+  box-shadow: 3px 4px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
 .header .header_navlink {
@@ -47,4 +47,25 @@
   font-size: 16px !important;
   margin-right: 12px;
   color: #000;
+}
+.resume-btn{
+  background-color: var(--main-color) !important;
+  font-size: 14 !important;
+  font-weight: 500 !important;
+  border: 0 !important;
+  border-radius: 50px !important;
+  padding: 1px 12px !important;
+  line-height: 35px !important;
+  min-width: 100px !important;
+  outline: none !important;
+  text-decoration: none;
+}
+.resume-btn .btn_text {
+  color: black !important;
+  font-size: 14px !important;
+  text-transform: none !important;
+  text-align: center;
+  width: 100%;
+  margin-right: 5px;
+  margin-left: 5px;
 }
