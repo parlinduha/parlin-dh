@@ -102,10 +102,30 @@ const Portfolio = () => {
         </Grid>
       </Grid>
       <Dialog
+        open={Boolean(projectDialog)}
         onClose={() => setProjectDialog(false)}
         className="projectDialog"
         maxWidth={'lg'} 
       >
+      <img src={projectDialog.images} alt="" className="projectDialog_image" /> 
+        <DialogTitle onClose={() => setProjectDialog(true)}>
+          {projectDialog.title}
+        </DialogTitle>
+        <DialogContent className="projectDialog_image" style={{ height: '80vh', width: '100vh' }}>
+          {projectDialog.images && (
+            <ImageGallery image={projectDialog.images}/>
+          )}
+          <Typography className="projectDialog_description">
+            {projectDialog.description}
+          </Typography>
+        </DialogContent>
+        <DialogActions className="projectDialog_actions">
+          {projectDialog?.links?.map((link) => (
+            <a href={link.link} target="__blank" rel="noopener noreferrer" className="projectDialog_icon">
+              {link.icon}
+            </a>
+          ))}
+        </DialogActions>
       </Dialog>
       {/* End Value Tabs */}
     </Grid>

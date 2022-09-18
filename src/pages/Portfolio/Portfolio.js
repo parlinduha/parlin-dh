@@ -22,7 +22,6 @@ const Portfolio = () => {
   const [tabValue, setTabValue] = useState("All");
   const [projectDialog, setProjectDialog] = useState(true);
 
-
   return (
     <Grid className="section pb_45 pt_45" spacing={1}>
       <Grid className="section_title mb_20">
@@ -75,7 +74,7 @@ const Portfolio = () => {
                       <CardActionArea>
                         <CardMedia
                           className="customCard_image"
-                          image={project.image}
+                          image={project.images}
                           title={project.title}
                         />
                         <CardContent>
@@ -96,7 +95,7 @@ const Portfolio = () => {
                     </Card>
                   </Grow>
                 </Grid>
-              ):null}
+              ) : null}
             </>
           ))}
         </Grid>
@@ -105,9 +104,33 @@ const Portfolio = () => {
         open={Boolean(projectDialog)}
         onClose={() => setProjectDialog(false)}
         className="projectDialog"
-        maxWidth={'lg'} 
+        maxWidth={"lg"}
       >
-      <img src={projectDialog.images} alt="" className="projectDialog_image" /> 
+        <DialogTitle onClose={() => setProjectDialog(true)}>
+        {projectDialog.title}
+          <DialogContent>
+            <img
+              src={projectDialog.images}
+              alt=""
+              className="projectDialog_image"
+            />
+          </DialogContent>
+        </DialogTitle>
+        <Typography className="projectDialog_description">
+          {projectDialog.description}
+        </Typography>
+        <DialogActions className="projectDialog_actions">
+          {projectDialog?.links?.map((link) => (
+            <a
+              href={link.link}
+              target="__blank"
+              rel="noopener noreferrer"
+              className="projectDialog_icon"
+            >
+              {link.icon}
+            </a>
+          ))}
+        </DialogActions>
       </Dialog>
       {/* End Value Tabs */}
     </Grid>
